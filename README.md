@@ -7,7 +7,7 @@ JavaFX application that emulates the Guillotine card game. Final project for CSD
 
 -Program code 
 
--Unit Tests
+-Unit Tests (done via JUnit)
 
 ## Gameplay Instructions/ How to Play:
 
