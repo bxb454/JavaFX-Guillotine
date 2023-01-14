@@ -1,2 +1,13 @@
 # JavaFX-Guillotine
-Final project for CSDS132 involving manipulation of LinkedLists.
+JavaFX application that emulates the Guillotine card game. Final project for CSDS132 involving manipulation of LinkedLists.
+
+# In this repo you will find:
+
+-Instructions on how to play Guillotine
+
+-Program code 
+
+-Unit Tests
+
+## Gameplay Instructions/ How to Play:
+
