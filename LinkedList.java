@@ -1,4 +1,3 @@
-package com.example.prelabs;
 import java.util.NoSuchElementException;
 
 /**
@@ -39,6 +38,7 @@ public class LinkedList<T> implements Iterable<T> {
 
     /**
      * Add an element to the front of the linked list
+     * @param element the element to be added to the front of the linked list
      */
     public void addToFront(T element) {
         setFirstNode(new LLNode<T>(element, getFirstNode()));
@@ -110,7 +110,6 @@ public class LinkedList<T> implements Iterable<T> {
 
     }
 
-
     /**
      * This method reverses the first k elements of the LinkedList (reverse their order).
      * @param k how many elements to reverse.
@@ -127,8 +126,8 @@ public class LinkedList<T> implements Iterable<T> {
     }
 
     /**
-     * Returns the length of the linked list
-     * @return the number of nodes in the list
+     * Returns the length of the linked list.
+     * @return the number of nodes in the list.
      */
     public int length() {
         int count = 0;
@@ -142,7 +141,7 @@ public class LinkedList<T> implements Iterable<T> {
 
     /**
      * Adds an element to the end of the linked list
-     * @param element the element to insert at the end
+     * @param element the element to insert at the end of the linked list.
      */
     public void addToEnd(T element) {
         if (isEmpty())
@@ -156,8 +155,8 @@ public class LinkedList<T> implements Iterable<T> {
     }
 
     /**
-     * Return an iterator for this list
-     * @return the iterator for the list
+     * Return an iterator for this list.
+     * @return the iterator for the list.
      */
     @Override
     public LinkedListIterator<T> iterator() {
@@ -173,9 +172,7 @@ public class LinkedList<T> implements Iterable<T> {
         for (S element : list) {
             System.out.print(element);
             System.out.print(" ");
-        }
+         }
         System.out.println();
+     }
     }
-
-    }
-
