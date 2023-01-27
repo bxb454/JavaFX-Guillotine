@@ -2,10 +2,7 @@
  * This is the Guillotine testing class.
  * @author Boris Brondz
  */
-package com.example.prelabs;
-
 import org.junit.jupiter.api.Test;
-
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
@@ -72,8 +69,6 @@ class GuillotineTest {
         assertEquals(2, listMany.getFirstNode().getNext().getNext().getNext().getElement());
         assertEquals(1, listMany.getFirstNode().getNext().getNext().getNext().getNext().getElement());
 
-
-
         /**
          * Test first, middle, last
          */
@@ -127,7 +122,6 @@ class GuillotineTest {
             nodeptr = nodeptr.getNext();
         }
         assertEquals(1, nodeptr.getElement());
-
     }
 
     @Test
@@ -411,7 +405,6 @@ class GuillotineTest {
         Guillotine.moveLeadToEnd(testMany);
         assertEquals(1, testMany.getFirstNode().getNext().getNext().getNext().getNext().getElement());
 
-
     }
 
     @Test
@@ -443,7 +436,6 @@ class GuillotineTest {
         assertEquals(3, testMany.getFirstNode().getNext().getNext().getElement());
         assertEquals(4, testMany.getFirstNode().getNext().getElement());
         assertEquals(5, testMany.getFirstNode().getElement());
-
 
         /**
          * Test first, middle, last
@@ -493,14 +485,6 @@ class GuillotineTest {
         assertEquals(4, testMany.getFirstNode().getNext().getElement());
         assertEquals(5, testMany.getFirstNode().getElement());
         assertEquals(6, testMany.getFirstNode().getNext().getNext().getNext().getNext().getNext().getElement());
-
-
-
-
-        /**
-         * Test first, middle, last
-         */
-
     }
 
     @Test
@@ -515,8 +499,6 @@ class GuillotineTest {
         assertFalse(Guillotine.getTurn());
         Guillotine.skipTurn();
         assertTrue(Guillotine.getTurn());
-
-
     }
 
     @Test
@@ -542,7 +524,6 @@ class GuillotineTest {
         assertEquals(3, testMany.getFirstNode().getNext().getNext().getElement().toString());
         assertEquals(4, testMany.getFirstNode().getNext().getNext().getNext().getElement().toString());
         assertEquals(5, testMany.getFirstNode().getNext().getNext().getNext().getNext().getElement().toString());
-
     }
 
     @Test
@@ -554,10 +535,8 @@ class GuillotineTest {
 
         LinkedList<Guillotine.GuillotineCards> emptyHand = new LinkedList<>();
 
-          ByteArrayOutputStream output = new ByteArrayOutputStream();
-         PrintStream originalOut = System.out;
-        //private final PrintStream originalErr = System.err;
-
+        ByteArrayOutputStream output = new ByteArrayOutputStream();
+        PrintStream originalOut = System.out;
 
         Guillotine g = new Guillotine();
         g.setPlayer1Score(10);
@@ -582,7 +561,5 @@ class GuillotineTest {
         g3.setPlayer2Score(10);
         Guillotine.endGame(emptyHand);
         assertEquals("Tie!", output3.toString());
-
     }
-
 }
